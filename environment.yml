@@ -1,0 +1,17 @@
+name: alerta-pedidos
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas>=2.0
+  - openpyxl          # lectura de los exports .xlsx del ERP
+  - pyarrow           # motor de parquet
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - jupyterlab
+  - pip
+  - pip:
+      - xgboost
+      - rapidfuzz     # matching difuso de nombres de clientes
+      - holidays      # feriados oficiales de Argentina

@@ -1,0 +1,28 @@
+# ── Datos confidenciales: NUNCA al repo ─────────────────────────
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Cualquier Excel o parquet suelto que ande dando vueltas
+*.xlsx
+*.xls
+*.parquet
+*.csv
+!data/feriados_extra.csv
+
+# ── Python ──────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# ── Entornos e IDE ──────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
